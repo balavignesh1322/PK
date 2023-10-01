@@ -15,12 +15,10 @@
         
         .heart {
             position: relative;
-            /* width: 100px; */
+            
             height: 200px;
             font-size:100px;
-            
         }
-        
         
         .message {
             font-size: 24px;
@@ -31,6 +29,19 @@
 <body>
     <div class="heart">❤️‍🩹</div>
     <div class="message">Sorry kiruthika🥺</div>
+    
+  
+    <button onclick="showAlerts()">Click Me</button>
 
+    <script>
+        function showAlerts() {
+            for (let i = 0; i < 10; i++) {
+               
+                const heartContent = document.querySelector('.heart').textContent;
+                const messageContent = document.querySelector('.message').textContent;
+                alert(heartContent + ' ' + messageContent);
+            }
+        }
+    </script>
 </body>
 </html>
