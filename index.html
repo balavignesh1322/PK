@@ -27,8 +27,8 @@
     </style>
 </head>
 <body>
-    <div class="heart">❤️‍🩹</div>
-    <div class="message">Sorry kiruthika🥺</div>
+    <div class="heart"></div>
+    <div class="message"></div>
     
   
     <button onclick="showAlerts()">Click Me</button>
@@ -37,8 +37,8 @@
         function showAlerts() {
             for (let i = 0; i < 10; i++) {
                
-                const heartContent = document.querySelector('.heart').textContent;
-                const messageContent = document.querySelector('.message').textContent;
+                const heartContent = "❤️‍🩹"
+                const messageContent ="Sorry kiruthika🥺";
                 alert(heartContent + ' ' + messageContent);
             }
         }
